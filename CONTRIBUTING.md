@@ -1,7 +1,6 @@
 # Volunteering help for KTISEOS NYX projects
 
 [__Promotion and Docs__](#promotion-and-docs)<br>
-[__Setting up For Development__](#setting-up-for-development)<br>
 [__Contributing Code__](#contributing-code)<br>
 
 ## Promotion And Docs
@@ -26,35 +25,6 @@ Coordinate with us by:
 ![A flat logo for Discord](https://img.shields.io/badge/%20Discord%20_%20_%20_%20_%20_%7C-_?style=flat-square&labelColor=rgb(65%2C69%2C191)&color=rgb(65%2C69%2C191))
 
 </a>
-
-## Setting Up For Development:
-
-These are the instructions to follow for people who want to build the app with us!
-
-### Dev Installation:
-> ```
-> pip install -e .[dev]
-> ```
-
-### Update version:
-> ```
-> python -m _version
-> ```
->
-
-### Run with debug logging :
-> ```
-> dataset-tools -d
-> ```
-> or
-> ```
-> python -m main --log debug
-> ```
-
-### Reinstallation:
-> ```
-> pip uninstall dataset-tools
-> ```
 
 ## Contributing Code
 

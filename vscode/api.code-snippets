@@ -60,13 +60,13 @@
 		],
 		"description": "Add sphinx docstring for a function/method that accepts three parameters"
 	},
-	"logger_debug_variable": {
+	"logger_debug_decorator": {
 		"scope": "python",
-		"prefix": "API Logger Variable Debug",
+		"prefix": "API Logger Function Debug",
 		"body": [
-			"logger.debug('${1:variable}:: %s', f'{type(${1:variable})} {${1:variable}}')"
+			"@debug_monitor"
 		],
-		"description": "Add a debug statement for a specific variable"
+		"description": "Add a debug statement for a specific function"
 	},
 	"try_except_log_block": {
 		"scope": "python",
@@ -75,7 +75,7 @@
 			"try:",
 			"    ${1:hazardous_code}",
 			"except ${2:exception_type} as error_log:",
-			"    logger.info('${3:error_message} %s', f'${4:variables/code} , {error_log}', exc_info=EXC_INFO)"
+			"    nfo('${3:error_message} %s', f'${4:variables/code} , {error_log}')"
 		],
 		"description": "Add a try/except catch statement with logger info"
 	},
@@ -83,7 +83,7 @@
 		"scope": "python",
 		"prefix": "API Logger Except Info Only",
 		"body": [
-			"    logger.info('${1:error_message} %s', f'{${2:variables/code}}, {error_log}', exc_info=EXC_INFO)"
+			"    nfo('${1:error_message} %s', f'{${2:variables/code}}, {error_log}')"
 		],
 		"description": "Add info formatted for a try/except statement"
 	},
